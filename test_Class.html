@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OpenLayers Map</title>
+    <link
+      rel="stylesheet"
+      href="https://openlayers.org/en/v6.13.0/css/ol.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./CSS/my.CSS" type="text/css" />
+  </head>
+  <body>
+    <div id="map"></div>
+    <form class="form-inline">
+      <div>
+        <label>Map layer &nbsp;</label>
+        <select id="mapLayer">
+          <option value="OpenStreet">Open Street</option>
+          <option value="Google">Google</option>
+          <option value="Bing">Bing</option>
+        </select>
+      </div>
+      <div>
+        <label>Geometry type &nbsp;</label>
+        <select id="type">
+          <option value="Point">Point</option>
+          <option value="LineString">LineString</option>
+          <option value="Polygon">Polygon</option>
+        </select>
+      </div>
+      <div>
+        <input
+          style="cursor: pointer"
+          id="layerChecker"
+          type="checkbox"
+          checked
+        />
+        <label style="cursor: pointer" for="layerChecker"
+          >Display layer &nbsp;</label
+        >
+      </div>
+    </form>
+    <script src="./libs/ol.js"></script>
+    <script src="./JS/myjs.js"></script>
+  </body>
+</html>
